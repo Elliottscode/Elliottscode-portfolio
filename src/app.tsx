@@ -1,5 +1,11 @@
 import * as React from "react";
-
+import ResponsiveAppBar from "./component/AppBar";
 type AppProps = { num: number };
 
-export const App = ({num}: AppProps) => <h1>Total Number: {num}</h1>;
+export const App = () => 
+
+<div>
+<ResponsiveAppBar />
+</div>
+
+;
