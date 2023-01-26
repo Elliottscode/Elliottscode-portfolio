@@ -1,11 +1,12 @@
 import * as React from "react";
 import ResponsiveAppBar from "../component/AppBar";
-const s = require('./about.css');
-const About = () => (
+import about from "./about.module.scss";
+
+export const About = () => (
 
     <div>
         <ResponsiveAppBar />
-        <h1 className={s.h1}>About</h1>
+        <h1 className={about.h1}>About</h1>
 
     </div>
 

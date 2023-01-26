@@ -1,7 +1,8 @@
 import * as React from "react";
 import ResponsiveAppBar from "./component/AppBar";
 import {    BrowserRouter as Router, 
-            Route,
+            Route, 
+            Routes,
             Link } 
             from "react-router-dom";
 
@@ -12,10 +13,12 @@ export const App = () => (
 <div>
     <ResponsiveAppBar />
     <Router>
-        <Link to="/">Home</Link>
-        <Link to="./pages/About.tsx">About</Link>
-
+        <Routes>
+        <Route path="/">Home</Route>
+        <Route path="./pages/About.tsx"></Route>
+        </Routes>
     </Router>
+    <a>this is sutff</a>
 
 
 
