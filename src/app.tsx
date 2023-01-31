@@ -6,6 +6,8 @@ import {    BrowserRouter as Router,
             Link } 
             from "react-router-dom";
 
+import appstyles from "./app.scss";
+
 type AppProps = { num: number };
 
 export const App = () => (
@@ -18,7 +20,7 @@ export const App = () => (
         <Route path="./pages/About.tsx"></Route>
         </Routes>
     </Router>
-    <a>this is sutff</a>
+    <a className={appstyles.first}>this is stuff</a>
 
 
 

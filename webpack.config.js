@@ -41,9 +41,10 @@ module.exports = {
             {
                 test: /\.(scss|css)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader', 
-                    'sass-loader'   
+                    {loader: "style-loader"}, // Step 4: style loader injects the result intho the DOM as a style block
+                    { loader: "css-modules-typescript-loader"}, // Step 3: generates a .d.ts module next to the .scss file 
+                    { loader: "css-loader", options: { modules: true } }, // Step 2: convert css to js to be bundled module true renames css classes in output 
+                    { loader: "sass-loader" } // Step 1: convert sass to css                      
                 ],
             },
             {
