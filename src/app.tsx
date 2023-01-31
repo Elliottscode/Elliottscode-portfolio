@@ -8,16 +8,21 @@ import {    BrowserRouter as Router,
 
 import appstyles from "./app.scss";
 
+
+// Pages 
+import About from "./pages/About";
+
 type AppProps = { num: number };
 
 export const App = () => (
 
 <div>
-    <ResponsiveAppBar />
+    
     <Router>
+        <ResponsiveAppBar />
         <Routes>
         <Route path="/">Home</Route>
-        <Route path="./pages/About.tsx"></Route>
+        <Route path="/About" element={<About />}  />
         </Routes>
     </Router>
     <a className={appstyles.first}>this is stuff</a>

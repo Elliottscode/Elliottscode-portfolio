@@ -53,6 +53,6 @@ module.exports = {
             }
         ]
     },
-    plugins: [new MiniCssExtractPlugin(), new webpack.HotModuleReplacementPlugin(), new HtmlWebpackPlugin({template: './public/index.html'})
+    plugins: [new MiniCssExtractPlugin(), new webpack.HotModuleReplacementPlugin(), new HtmlWebpackPlugin({favicon: "./public/favicon.ico", template: './public/index.html'})
     ]
 };

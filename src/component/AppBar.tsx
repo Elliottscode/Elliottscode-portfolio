@@ -13,6 +13,12 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
+// imports
+import { Link } from 'react-router-dom';
+
+// my pages 
+import About from "../pages/About";
+
 const pages = ['About', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -99,7 +105,7 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href="/pages/About.tsx"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
