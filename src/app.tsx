@@ -11,8 +11,8 @@ import appstyles from "./app.scss";
 
 // Pages 
 import About from "./pages/About";
+import Home from "./pages/Home";
 
-type AppProps = { num: number };
 
 export const App = () => (
 
@@ -20,9 +20,10 @@ export const App = () => (
     
     <Router>
         <ResponsiveAppBar />
+        <Link to={'/About.tsx'}>About</Link>
         <Routes>
-        <Route path="/">Home</Route>
-        <Route path="/About" element={<About />}  />
+        <Route path="/" element={<Home />}>Home</Route>
+        <Route path="/About.tsx" element={<About />}  />
         </Routes>
     </Router>
     <a className={appstyles.first}>this is stuff</a>
