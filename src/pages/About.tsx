@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import ResponsiveAppBar from "../component/AppBar";
 import about from "./about.scss";
 
