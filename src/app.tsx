@@ -11,6 +11,7 @@ import appstyles from "./app.scss";
 // Pages 
 import About from "./pages/About";
 import Home from "./pages/Home";
+import Blog from "./pages/Blog";
 
 
 export const App = () => (
@@ -18,10 +19,11 @@ export const App = () => (
 <div>
     
     <Router>
-        <Link to={'/About.tsx'}>About</Link>
+        <Link to={'/'}>Home</Link>
+        <Link to={'about'}>About</Link>
         <Routes>
         <Route path="/" element={<Home />}>Home</Route>
-        <Route path="/About.tsx" element={<About />}  />
+        <Route path="about" element={<About />}  />
         </Routes>
     </Router>
     <a className={appstyles.first}>this is stuff</a>

@@ -14,13 +14,18 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 // imports
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {routes as pageRoutes} from "../routes";
 
 // my pages 
 import About from "../pages/About";
 
-const pages = ['About', 'Pricing', 'Blog'];
-const pageLinks = ['../pages/About'];
+//const pages = ['About', 'Pricing', 'Blog'];
+
+const pages = [{text: 'About', href: 'about'}, 
+  {text: 'Blog', href: '/blog'}, 
+  {text: 'Contact', href: '/contact'}];
+
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -95,8 +100,8 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.text} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.text}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -121,16 +126,25 @@ function ResponsiveAppBar() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            <Router>
+            <Routes>
+            {pageRoutes.map((route) => (
+              <Route key={route.key}
+                     path={route.path}
+                     element={<route.component />}
+              >
               <Button
-                key={page}
+                key={route.key}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
-                href='./About.tsx'
               >
-                {page}
+                {route.title}
               </Button>
+              </Route>
+            
             ))}
+            </Routes>
+            </Router>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
