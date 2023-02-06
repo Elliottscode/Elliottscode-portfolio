@@ -37,6 +37,7 @@
     "@types/node-sass": "^4.11.3",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "@types/react-router-dom": "^5.3.3",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "css-modules-typescript-loader": "^4.0.1",

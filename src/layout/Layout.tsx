@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, CssBaseline } from "@mui/material";
+import { BrowserRouter, Router } from "react-router-dom";
 
 
 // componets 
@@ -16,7 +17,9 @@ export const Layout = (Props:props) => (
     <>
     <CssBaseline />
     <Container maxWidth={false} disableGutters={true}>
+    <BrowserRouter>
     <AppBar></AppBar>
+    </BrowserRouter>
     <main>{Props.children}</main>
     <Footer></Footer>
     </Container>

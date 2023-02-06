@@ -14,11 +14,13 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 // imports
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import {routes as pageRoutes} from "../routes";
+import { Link } from '@mui/material';
 
 // my pages 
 import About from "../pages/About";
+import { NavLink} from 'react-router-dom';
 
 //const pages = ['About', 'Pricing', 'Blog'];
 
@@ -126,25 +128,19 @@ function ResponsiveAppBar() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            <Router>
-            <Routes>
+
             {pageRoutes.map((route) => (
-              <Route key={route.key}
-                     path={route.path}
-                     element={<route.component />}
-              >
-              <Button
+              <Link
                 key={route.key}
-                onClick={handleCloseNavMenu}
+                component={NavLink}
+                to={route.path}
+                variant='button'
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {route.title}
-              </Button>
-              </Route>
+              </Link>
             
             ))}
-            </Routes>
-            </Router>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
