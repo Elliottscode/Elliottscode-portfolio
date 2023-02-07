@@ -14,9 +14,9 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 // imports
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import {routes as pageRoutes} from "../routes";
-import { Link } from '@mui/material';
+//import { Link } from '@mui/material';
 
 // my pages 
 import About from "../pages/About";
@@ -132,45 +132,19 @@ function ResponsiveAppBar() {
             {pageRoutes.map((route) => (
               <Link
                 key={route.key}
-                component={NavLink}
                 to={route.path}
-                variant='button'
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                style={{textDecoration: 'none'}}
               >
+                <Button
+                key={route.title}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+                >
                 {route.title}
+              </Button>
               </Link>
             
             ))}
-          </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
           </Box>
         </Toolbar>
       </Container>

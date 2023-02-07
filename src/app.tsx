@@ -1,17 +1,19 @@
 import React from "react";
-import ResponsiveAppBar from "./component/AppBar";
+
 import {    BrowserRouter as Router, 
             Route, 
-            Routes,
-            Link } from "react-router-dom";
+            Routes
+        } from "react-router-dom";
 
 import appstyles from "./app.scss";
+import ResponsiveAppBar from "./component/AppBar";
 
 
 // Pages 
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
+import Portfolio from "./pages/Portfolio";
 
 
 export const App = () => (
@@ -19,14 +21,14 @@ export const App = () => (
 <div>
     
     <Router>
-        <Link to={'/'}>Home</Link>
-        <Link to={'about'}>About</Link>
+        <ResponsiveAppBar />
         <Routes>
-        <Route path="/" element={<Home />}>Home</Route>
+        <Route path="/" element={<Home />} />
         <Route path="about" element={<About />}  />
+        <Route path="blog" element={<Blog />} />
+        <Route path="portfolio" element={<Portfolio />} />
         </Routes>
     </Router>
-    <a className={appstyles.first}>this is stuff</a>
 
 
 

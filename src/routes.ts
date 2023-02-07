@@ -27,7 +27,7 @@ export const routes: Array<Route> = [
     {
         key: 'about-route',
         title: 'About',
-        path: '/about',
+        path: 'about',
         enabled: true,
         component: About
     },
@@ -35,6 +35,13 @@ export const routes: Array<Route> = [
         key: 'blog-route',
         title: 'Blog',
         path: '/blog',
+        enabled: true,
+        component: Blog
+    },
+    {
+        key: 'portfolio-route',
+        title: 'Portfolio',
+        path: '/portfolio',
         enabled: true,
         component: Blog
     }
