@@ -28,7 +28,6 @@ const pages = [{text: 'About', href: 'about'},
   {text: 'Blog', href: '/blog'}, 
   {text: 'Contact', href: '/contact'}];
 
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);

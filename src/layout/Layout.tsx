@@ -4,6 +4,7 @@ import { Container, CssBaseline } from "@mui/material";
 
 // componets 
 import Footer from "../component/Footer";
+import SideMenu from "../component/SideMenu";
 
 interface props {
     children: React.ReactNode 

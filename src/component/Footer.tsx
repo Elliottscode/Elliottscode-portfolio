@@ -1,16 +1,8 @@
 import React from "react";
 import { Paper, Typography, Container, ThemeProvider } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/system";
 
-const useStyles = makeStyles(() => {
-    root: {
-        flexGrow: 1
-    }
-    footer: {
-        backgroundColor: "#000000"
-    }
-});
+import purple from "../themes/theme";
 
 
 
@@ -21,7 +13,7 @@ export const Footer = () => (
             height: '5%',
             bottom: 0,
             position: "fixed",
-            backgroundColor: "#D3D3D3"}} 
+            backgroundColor: (purple) => purple.palette.background.default }} 
         component="footer" 
         square variant="outlined"
     >
