@@ -6,10 +6,10 @@ import { Layout } from "./layout/Layout";
 import { ThemeProvider } from "@mui/system";
 
 // Themes 
-import purple from "./themes/theme";
+import Mythemes from "./themes/theme";
 
 // Components 
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
-root.render(<ThemeProvider theme={purple}><Layout><App /></Layout></ThemeProvider>);
+root.render(<ThemeProvider theme={Mythemes.light}><Layout><App /></Layout></ThemeProvider>);

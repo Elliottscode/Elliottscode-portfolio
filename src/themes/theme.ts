@@ -23,7 +23,7 @@ const purple = createTheme({
 
 });
 
-const Light = createTheme({
+const light = createTheme({
 
     palette: {
         primary: {
@@ -33,10 +33,10 @@ const Light = createTheme({
             main: '#94d944'
         },
         background: {
-            default: "#222222"
+            default: "#ffffff"
         },
         text: {
-            primary: "#ffffff"
+            primary: "#000000"
         }
     }
 
@@ -45,4 +45,10 @@ const Light = createTheme({
 
 });
 
-export default purple;
+const Mythemes = {
+    purple,
+    light
+}
+
+
+export default Mythemes;

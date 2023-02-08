@@ -12,7 +12,6 @@ export const Footer = () => (
             width: '100%',
             height: '5%',
             bottom: 0,
-            position: "fixed",
             backgroundColor: (purple) => purple.palette.background.default }} 
         component="footer" 
         square variant="outlined"
