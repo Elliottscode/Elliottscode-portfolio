@@ -14,22 +14,23 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 // imports
-import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import { Link} from "react-router-dom";
 import {routes as pageRoutes} from "../routes";
-//import { Link } from '@mui/material';
 
-// my pages 
-import About from "../pages/About";
-import { NavLink} from 'react-router-dom';
+// styles 
+import style from "./AppBar.scss";
 
-
+//theme
+import darkTheme from "../themes/darkTheme";
+import { ThemeProvider } from '@mui/material';
 
 
 function ResponsiveAppBar() {
 
 
   return (
-    <AppBar position="sticky">
+    <ThemeProvider theme={darkTheme}>
+    <AppBar position="relative" sx={{bgcolor: 'background.paper', boxShadow: "true"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -42,14 +43,15 @@ function ResponsiveAppBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'text.primary',
               textDecoration: 'none',
+              fontSize: '150%'
             }}
           >
             ElliottsCode
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box maxWidth="40%" sx={{ marginLeft: '30%', flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-between'}}>
 
             {pageRoutes.map((route) => (
               <Link
@@ -59,7 +61,7 @@ function ResponsiveAppBar() {
               >
                 <Button
                 key={route.title}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 3, color: 'text.primary', display: 'block', fontSize: '110%'}}
                 >
                 {route.title}
               </Button>
@@ -70,6 +72,7 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
     </AppBar>
+    </ThemeProvider>
   );
 }
 export default ResponsiveAppBar;

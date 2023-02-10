@@ -3,6 +3,9 @@ import { Paper, Typography, Box, Container, Grid, CssBaseline } from "@mui/mater
 
 import style from "./home.scss";
 
+// theme 
+import dark from "../themes/darkTheme";
+
 
 
 export const Home = () => (

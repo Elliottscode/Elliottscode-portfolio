@@ -6,10 +6,10 @@ import { Layout } from "./layout/Layout";
 import { ThemeProvider } from "@mui/system";
 
 // Themes 
-import Mythemes from "./themes/theme";
+import darkTheme from "./themes/darkTheme";
 
 // Components 
 
 const container = document.getElementById("root");
 const root = createRoot(container!);
-root.render(<ThemeProvider theme={Mythemes.light}><Layout><App /></Layout></ThemeProvider>);
+root.render(<ThemeProvider theme={darkTheme}><Layout><App /></Layout></ThemeProvider>);

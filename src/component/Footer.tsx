@@ -1,46 +1,44 @@
 import React from "react";
 import { Paper, Typography, Container, ThemeProvider } from "@mui/material";
-import { Box } from "@mui/system";
-
-import purple from "../themes/theme";
+import { render } from "node-sass";
 
 
 
-export const Footer = () => (
+type AppProps = {
+    datetime: string;
+}
+
+
+export const Footer = ({ datetime }: AppProps) => (
+
+
     <Paper 
         sx={{
             width: '100%',
-            height: '5%',
+            height: '10vh',
             bottom: 0,
-            backgroundColor: (purple) => purple.palette.background.default }} 
+            display: 'flex',
+            justifyContent: 'center', 
+            verticalAlign: 'center', 
+            alignItems: 'center'}} 
         component="footer" 
         square variant="outlined"
+        
     >
-        <Container maxWidth="lg">
-            <Box
-                sx={{
-                    flexGrow: 1,
-                    justifyContent: "center",
-                    display: "flex",
-                    my:1,
-                    alignItems: "center",
-                    direction: "column"
-
-                }}
-            >
+  
                 <Typography variant="caption">
                     Created By Elliott :)
 
                 </Typography>
 
+                <Typography variant="caption">
+                    {datetime}
+                </Typography>
 
 
-            </Box>
 
-        </Container>
     </Paper>
 
-    
     
 
 );
