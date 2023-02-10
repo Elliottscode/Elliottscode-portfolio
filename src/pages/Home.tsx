@@ -1,30 +1,41 @@
 import * as React from "react";
-import { Paper, Typography, Box, Container } from "@mui/material";
+import { Paper, Typography, Box, Container, Grid, CssBaseline } from "@mui/material";
 
-import homeStyle from "./home.scss";
+import style from "./home.scss";
 
 
 
 export const Home = () => (
+<>
+  <CssBaseline />
+  <Container maxWidth={false} className={style.container} >
 
-  <Container >
-    <Box className={homeStyle.box} sx={{ width: '100%'}}>
-        <Typography variant="h1">
-            This is text
-        </Typography>
+      <Grid container className={style.gridContainer}  sx={{}} >
 
-        <Typography sx={{ align:"left"}}>
-            This is what i am talking about and such is 
-            the way to go on about shit
-            the way to go on about shit
-            the way to go on about shit
-            the way to go on about shit
-            the way to go on about shit
-        </Typography>
-    </Box>
+          <Typography className={style.title} variant="h1" sx={{}}>
+              This is text
+          </Typography>
+
+        <Grid item sx={{}}>
+          <Typography className={style.pad} sx={{ fontSize: "10re"}}>
+              This is what i am talking about This is what i am talking about This is what i am talking about This is what i am talking about This is what i am talking aboutThis is what i am talking aboutThis is what i am talking about
+          </Typography>
+        </Grid>
+        <Grid item xs={6} md={6}>
+          <Typography sx={{ fontSize: "10re"}}>
+              This is what i am talking about
+          </Typography>
+        </Grid>
+        <Grid item xs={6} md={6}>
+          <Typography sx={{ fontSize: "10re"}}>
+              This is what i am talking about
+          </Typography>
+        </Grid>
+          
+      </Grid>
 
   </Container>
-
+</>
 );
   
 export default Home;

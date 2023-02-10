@@ -1,5 +1,39 @@
 
+// to make container fill width 
+.container {
+    flex-grow: 1;
+    background-color: black;
+}
 
-.box {
-    background-color: clear;
+.gridContainer {
+    padding-top: 3vh;
+    background-color: pink;
+}
+
+
+.title {
+    padding-left: 15vw;
+}
+
+
+.pad{
+    padding-top: 50%;
+}
+
+
+.black {
+    background-color: black;
+
+}
+
+.pink {
+    background-color: pink;
+}
+
+.blue {
+    background-color: aquamarine;
+}
+
+.white {
+    background-color: white;
 }
