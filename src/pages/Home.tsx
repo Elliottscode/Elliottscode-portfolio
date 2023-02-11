@@ -16,7 +16,7 @@ export const Home = () => (
       <Grid container className={style.gridContainer}  sx={{}} >
 
           <Typography className={style.title} variant="h1" sx={{}}>
-              This is text
+              Hire me?
           </Typography>
 
         <Grid item sx={{}}>

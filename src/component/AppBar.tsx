@@ -45,10 +45,11 @@ function ResponsiveAppBar() {
               letterSpacing: '.3rem',
               color: 'text.primary',
               textDecoration: 'none',
-              fontSize: '150%'
+              fontSize: '150%',
+              marginRight: '2vw'
             }}
           >
-            ElliottsCode
+            Elcode
           </Typography>
 
           <Box maxWidth="40%" sx={{ marginLeft: '30%', flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-between'}}>
