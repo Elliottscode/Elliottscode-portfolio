@@ -12,11 +12,11 @@ interface props {
     children: React.ReactNode 
 }
 
-const date = new Date();
-const datestr = "this is a string";
+
 
 export const Layout = (Props:props) => (
 
+    
     <>
     <CssBaseline />
     <Container maxWidth={false} disableGutters={true} >

@@ -1,24 +1,9 @@
-import React from "react";
-import { Paper, Typography, Container, ThemeProvider } from "@mui/material";
+import * as React from "react";
+import { Paper, Typography, Container, ThemeProvider, Box } from "@mui/material";
 
-
-
-type AppProps = {
-    datetime: string;
-}
-
-function getDate() {
-    var str = "";
-    var date = new Date;
-    const dateStr = date.toDateString;
-    var str = str + dateStr;
-    return str;
-
-}
 
 function Footer()  {
-    var dateText = "";
-    var dateText = getDate();
+
 
 return (
     <Paper 
@@ -26,22 +11,31 @@ return (
             width: '100%',
             height: '10vh',
             bottom: 0,
-            display: 'flex',
-            justifyContent: 'center', 
-            verticalAlign: 'center', 
-            alignItems: 'center'}} 
+            display: 'flex'}} 
         component="footer" 
         square variant="outlined"
         
     >
-  
-                <Typography variant="caption">
+        <Container sx={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+            bgcolor: "black"
+            }}>
+
+        
+                <Typography sx={{}} variant="caption">
                     Created By Elliott :)
 
                 </Typography>
-
+                <Typography sx={{justifyContent:'right'}} variant="caption">
+                    {`${new Date().toLocaleDateString()}`}
+                </Typography>
+        </Container>
                 <Typography variant="caption">
-                   {dateText}
+                    {`${new Date().toLocaleDateString()}`}
                 </Typography>
 
 
