@@ -1,6 +1,5 @@
 import React from "react";
 import { Paper, Typography, Container, ThemeProvider } from "@mui/material";
-import { render } from "node-sass";
 
 
 
@@ -8,10 +7,20 @@ type AppProps = {
     datetime: string;
 }
 
+function getDate() {
+    var str = "";
+    var date = new Date;
+    const dateStr = date.toDateString;
+    var str = str + dateStr;
+    return str;
 
-export const Footer = ({ datetime }: AppProps) => (
+}
 
+function Footer()  {
+    var dateText = "";
+    var dateText = getDate();
 
+return (
     <Paper 
         sx={{
             width: '100%',
@@ -32,15 +41,17 @@ export const Footer = ({ datetime }: AppProps) => (
                 </Typography>
 
                 <Typography variant="caption">
-                    {datetime}
+                   {dateText}
                 </Typography>
 
 
 
     </Paper>
 
+)
+
     
 
-);
+ };
   
 export default Footer;

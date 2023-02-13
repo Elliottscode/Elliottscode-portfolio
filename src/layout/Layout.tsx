@@ -21,7 +21,7 @@ export const Layout = (Props:props) => (
     <CssBaseline />
     <Container maxWidth={false} disableGutters={true} >
     <main>{Props.children}</main>
-    <Footer datetime={datestr}></Footer>
+    <Footer></Footer>
     </Container>
     
     </>
