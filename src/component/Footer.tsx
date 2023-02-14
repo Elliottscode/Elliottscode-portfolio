@@ -34,9 +34,7 @@ return (
                     {`${new Date().toLocaleDateString()}`}
                 </Typography>
         </Container>
-                <Typography variant="caption">
-                    {`${new Date().toLocaleDateString()}`}
-                </Typography>
+
 
 
 
