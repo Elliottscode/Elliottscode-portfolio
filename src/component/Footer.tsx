@@ -34,7 +34,7 @@ return (
             }}>
 
         
-                <Typography sx={{fontSize: '1.2rem'}} variant="caption">
+                <Typography sx={{fontSize: '0.9rem'}} variant="caption">
                     Created By Elliott :)
 
                 </Typography>
@@ -44,7 +44,7 @@ return (
                         paddingRight: '2%',
                         right: 0,
                         position: 'absolute',
-                        fontSize: '1.2rem'   }} variant="caption">
+                        fontSize: '0.9rem'   }} variant="caption">
                 {`${new Date().toLocaleDateString()}`}
         </Typography>
         
