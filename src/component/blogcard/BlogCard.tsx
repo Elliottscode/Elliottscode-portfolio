@@ -25,7 +25,7 @@ export const BlogCard = (props:blogData) => (
     <Paper sx={{ display: "flex", 
                 marginTop: "5%", 
                 marginBottom: "5%",
-                padding: "2vw",
+                padding: "3vh",
                 height: "25vh"}}>
         <Container disableGutters={true} sx={{width: "auto", height: '100%', bgcolor: "red"}}>
             <img
@@ -49,6 +49,14 @@ export const BlogCard = (props:blogData) => (
                 className={style.img}
 
             />
+            <img
+                src={gitlogo}
+                width="50%"
+                height="50%"
+                className={style.img}
+
+            />
+
 
         </Container>
 

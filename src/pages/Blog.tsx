@@ -14,7 +14,7 @@ export const Blog = () => {
     <>
         <CssBaseline />
         <Container sx={{}}>
-            <Typography variant="h2">
+            <Typography variant="h2" sx={{marginTop: "2vh"}}>
                 Topics 
             </Typography>
             <BlogCard title={blogData[0].title} bio={blogData[0].bio} image={blogData[0].image}></BlogCard>
