@@ -26,8 +26,8 @@ export const BlogCard = (props:blogData) => (
                 marginTop: "5%", 
                 marginBottom: "5%",
                 padding: "2vw",
-                height: "30vh"}}>
-        <Container disableGutters={true} sx={{padding: 0, margin: 0, width: '20%', height: '100%', bgcolor: "red"}}>
+                height: "25vh"}}>
+        <Container disableGutters={true} sx={{width: "auto", height: '100%', bgcolor: "red"}}>
             <img
                 src={gitlogo}
                 width="50%"
@@ -35,14 +35,29 @@ export const BlogCard = (props:blogData) => (
                 className={style.img}
 
             />
+            <img
+                src={gitlogo}
+                width="50%"
+                height="50%"
+                className={style.img}
+
+            />
+            <img
+                src={gitlogo}
+                width="50%"
+                height="50%"
+                className={style.img}
+
+            />
+
         </Container>
 
         <Container>
-        <Typography variant="h4" sx={{margin: "2%"}}>
+        <Typography variant="h4" sx={{ fontSize: "4vb"}}>
             {props.title}
         </Typography>
 
-        <Typography variant="body1" sx={{margin: "2%"}}>
+        <Typography variant="body1" sx={{ fontSize: "2.5vb" }}>
             {props.bio}
         </Typography>
         </Container>
