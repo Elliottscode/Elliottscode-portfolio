@@ -11,6 +11,7 @@ import ReactTSWebpack from "./pages/blogs/ReactTSWebpack";
 
 
 
+
 interface Route {
     key: string,
     title: string,
@@ -27,7 +28,7 @@ interface blog {
     enabled: boolean,
     component: FC<{}>,
     bio: string,
-    image: string[]
+    image: Array<string>
 }
 
 
@@ -73,7 +74,7 @@ export const blogroutes: Array<blog> = [
         enabled: true,
         component: ReactTSWebpack,
         bio: 'This is a little bio on what this tutorial does i am going to setup a boilier plate with react typesctripty webpack and sass with loaders gort',
-        image: ['reactlogo', './icons/tslogo.png', './icons/webpack.png', './icons/sasslogo.png']
+        image: ['reactlogo', 'tslogo', 'sasslogo', 'webpack']
     }
 
 ]

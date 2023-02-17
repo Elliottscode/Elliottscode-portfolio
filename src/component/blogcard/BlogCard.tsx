@@ -5,38 +5,20 @@ import { Link } from "react-router-dom";
 // blog page routes 
 import { blogroutes } from "../../routes";
 
-// images 
-import gitlogo from './icons/GitHub-logo.png';
-import reactlogo from './icons/reactlogo.png';
-import tslogo from './icons/tslogo.png';
-import sasslogo from './icons/sasslogo.png';
-import webpacklogo from './icons/webpack.png';
-
 
 // styling 
 import style from "./BlogCard.scss";
 
 
-
-// make image an array 
-
 interface blogData {
     title: string;
     bio: string;
-    image: string[];
+    image: Array<string>;
 }
 
-// const image1 = require();
-// const image1 = require();
-// const image1 = require();
-// const image1 = require();
 
 function BlogCard(props:blogData) {  
-const image =  props.image[0]
-const img1 = require(image)
-const img2 = require(props.image[1])
-const img3 = require(props.image[2])
-const img4 = require(props.image[3])
+
 
 
 return (    
@@ -49,26 +31,27 @@ return (
                 height: "fit-content"}}>
         <Container disableGutters={true} sx={{width: "200px", height: '100%', bgcolor: 'red'}}>
 
+
             <img
-                src={img1}
+                src={require(`./icons/${props.image[0]}.png`)}
                 width="50%"
                 height="50%"
                 className={style.img}
             />
             <img
-                src={img2}
+                src={require(`./icons/${props.image[1]}.png`)}
                 width="50%"
                 height="50%"
                 className={style.img}
             />
             <img
-                src={img3}
+                src={require(`./icons/${props.image[2]}.png`)}
                 width="50%"
                 height="50%"
                 className={style.img}
             />
             <img
-                src={img4}
+                src={require(`./icons/${props.image[3]}.png`)}
                 width="50%"
                 height="50%"
                 className={style.img}
