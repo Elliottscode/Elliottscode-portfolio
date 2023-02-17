@@ -5,7 +5,6 @@ interface CssExports {
   'blue': string;
   'container': string;
   'gridContainer': string;
-  'pad': string;
   'pink': string;
   'title': string;
   'white': string;

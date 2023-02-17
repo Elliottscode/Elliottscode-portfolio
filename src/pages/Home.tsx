@@ -20,7 +20,7 @@ export const Home = () => (
           </Typography>
 
         <Grid item sx={{}}>
-          <Typography className={style.pad} sx={{ fontSize: "10re"}}>
+          <Typography  sx={{ fontSize: "10re"}}>
               This is what i am talking about This is what i am talking about This is what i am talking about This is what i am talking about This is what i am talking aboutThis is what i am talking aboutThis is what i am talking about
           </Typography>
         </Grid>

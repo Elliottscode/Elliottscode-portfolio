@@ -2,10 +2,11 @@ import * as React from "react";
 import { CssBaseline, Container, Box, Typography, Paper } from "@mui/material";
 
 
-// Blog card component and data 
+// Blog card component
 import BlogCard from "../component/blogcard/BlogCard";
-import blogData from "../component/blogcard/BlogInfo";
 
+// Blog data and routes 
+import { blogroutes } from "../routes";
 
 
 export const Blog = () => {
@@ -17,11 +18,17 @@ export const Blog = () => {
             <Typography variant="h2" sx={{marginTop: "2vh"}}>
                 Topics 
             </Typography>
-            <BlogCard title={blogData[0].title} bio={blogData[0].bio} image={blogData[0].image}></BlogCard>
+            <BlogCard title={blogroutes[0].title} bio={blogroutes[0].bio} image={blogroutes[0].image}></BlogCard>
 
-            <BlogCard title={blogData[1].title} bio={blogData[1].bio} image={blogData[1].image}></BlogCard>
+            <BlogCard title={blogroutes[1].title} bio={blogroutes[1].bio} image={blogroutes[1].image}></BlogCard>
 
-            <BlogCard title={blogData[0].title} bio={blogData[0].bio} image={blogData[0].image}></BlogCard>
+            <BlogCard title={blogroutes[1].title} bio={blogroutes[1].bio} image={blogroutes[1].image}></BlogCard>
+
+            <BlogCard title={blogroutes[1].title} bio={blogroutes[1].bio} image={blogroutes[1].image}></BlogCard>
+
+            <BlogCard title={blogroutes[1].title} bio={blogroutes[1].bio} image={blogroutes[1].image}></BlogCard>
+
+            <BlogCard title={blogroutes[1].title} bio={blogroutes[1].bio} image={blogroutes[1].image}></BlogCard>
 
 
             

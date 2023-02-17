@@ -1,4 +1,13 @@
+
 .img {
     float: left;
     margin: 0px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+.link:hover {
+    color: #00F;
+    text-decoration: underline;
 }
