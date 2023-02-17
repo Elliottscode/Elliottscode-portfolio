@@ -75,6 +75,15 @@ export const blogroutes: Array<blog> = [
         component: ReactTSWebpack,
         bio: 'This is a little bio on what this tutorial does i am going to setup a boilier plate with react typesctripty webpack and sass with loaders gort',
         image: ['reactlogo', 'tslogo', 'sasslogo', 'webpack']
+    },
+    {
+        key: 'blog-2',
+        title: 'web scraper',
+        path: 'webscraper',
+        enabled: true,
+        component: ReactTSWebpack,
+        bio: 'This is a little bio on what this tutorial does i am going to setup a boilier plate with react typesctripty webpack and sass with loaders gort',
+        image: ['Github-logo', 'tslogo', 'sasslogo', 'webpack']
     }
 
 ]
