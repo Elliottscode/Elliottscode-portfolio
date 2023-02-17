@@ -16,10 +16,18 @@ interface Route {
     title: string,
     path: string,
     enabled: boolean,
-    component: FC<{}>,
-    bio?: string,
-    image?: string
+    component: FC<{}>
 
+}
+
+interface blog {
+    key: string,
+    title: string,
+    path: string,
+    enabled: boolean,
+    component: FC<{}>,
+    bio: string,
+    image: string[]
 }
 
 
@@ -57,7 +65,7 @@ export const routes: Array<Route> = [
 ]
 
 
-export const blogroutes: Array<Route> = [
+export const blogroutes: Array<blog> = [
     {
         key: 'blog-1',
         title: 'React Typescript Webpack Boilerplate',
@@ -65,16 +73,7 @@ export const blogroutes: Array<Route> = [
         enabled: true,
         component: ReactTSWebpack,
         bio: 'This is a little bio on what this tutorial does i am going to setup a boilier plate with react typesctripty webpack and sass with loaders gort',
-        image: 'this is a string'
-    },
-    {
-        key: 'placeholder-1',
-        title: 'This is the test topic item',
-        path: 'testpage',
-        enabled: true,
-        component: ReactTSWebpack,
-        bio: 'This is a little bio on what this tutorial does i am going to setup a boilier plate with react typesctripty webpack and sass with loaders gort',
-        image: 'this is a string'
+        image: ['reactlogo', './icons/tslogo.png', './icons/webpack.png', './icons/sasslogo.png']
     }
 
 ]

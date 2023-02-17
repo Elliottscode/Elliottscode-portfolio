@@ -20,16 +20,6 @@ export const Blog = () => {
             </Typography>
             <BlogCard title={blogroutes[0].title} bio={blogroutes[0].bio} image={blogroutes[0].image}></BlogCard>
 
-            <BlogCard title={blogroutes[1].title} bio={blogroutes[1].bio} image={blogroutes[1].image}></BlogCard>
-
-            <BlogCard title={blogroutes[1].title} bio={blogroutes[1].bio} image={blogroutes[1].image}></BlogCard>
-
-            <BlogCard title={blogroutes[1].title} bio={blogroutes[1].bio} image={blogroutes[1].image}></BlogCard>
-
-            <BlogCard title={blogroutes[1].title} bio={blogroutes[1].bio} image={blogroutes[1].image}></BlogCard>
-
-            <BlogCard title={blogroutes[1].title} bio={blogroutes[1].bio} image={blogroutes[1].image}></BlogCard>
-
 
             
 

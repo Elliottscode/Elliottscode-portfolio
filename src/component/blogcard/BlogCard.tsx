@@ -2,6 +2,8 @@ import * as React from "react";
 import { Paper, Typography, Box, Container, Grid, CssBaseline, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
+// blog page routes 
+import { blogroutes } from "../../routes";
 
 // images 
 import gitlogo from './icons/GitHub-logo.png';
@@ -14,21 +16,30 @@ import webpacklogo from './icons/webpack.png';
 // styling 
 import style from "./BlogCard.scss";
 
-// blog page routes 
-import { blogroutes } from "../../routes";
+
 
 // make image an array 
 
 interface blogData {
     title: string;
-    bio?: string;
-    image?: string;
+    bio: string;
+    image: string[];
 }
- 
 
-export const BlogCard = (props:blogData) => (
+// const image1 = require();
+// const image1 = require();
+// const image1 = require();
+// const image1 = require();
+
+function BlogCard(props:blogData) {  
+const image =  props.image[0]
+const img1 = require(image)
+const img2 = require(props.image[1])
+const img3 = require(props.image[2])
+const img4 = require(props.image[3])
 
 
+return (    
 <>
     <CssBaseline />
     <Paper sx={{ display: "flex", 
@@ -37,33 +48,30 @@ export const BlogCard = (props:blogData) => (
                 padding: "30px",
                 height: "fit-content"}}>
         <Container disableGutters={true} sx={{width: "200px", height: '100%', bgcolor: 'red'}}>
+
             <img
-                src={reactlogo}
+                src={img1}
                 width="50%"
                 height="50%"
                 className={style.img}
-
             />
             <img
-                src={tslogo}
+                src={img2}
                 width="50%"
                 height="50%"
                 className={style.img}
-
             />
             <img
-                src={sasslogo}
+                src={img3}
                 width="50%"
                 height="50%"
                 className={style.img}
-
             />
             <img
-                src={webpacklogo}
+                src={img4}
                 width="50%"
                 height="50%"
                 className={style.img}
-
             />
 
 
@@ -83,7 +91,9 @@ export const BlogCard = (props:blogData) => (
     </Paper>
 
 </>
+)
 
-);
+
+};
 
 export default BlogCard;
