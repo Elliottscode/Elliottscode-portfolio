@@ -83,7 +83,7 @@ export const blogroutes: Array<blog> = [
         enabled: true,
         component: ReactTSWebpack,
         bio: 'This is a little bio on what this tutorial does i am going to setup a boilier plate with react typesctripty webpack and sass with loaders gort',
-        image: ['Github-logo', 'tslogo', 'sasslogo', 'webpack']
+        image: ['github', 'github', 'github', 'github']
     }
 
 ]
