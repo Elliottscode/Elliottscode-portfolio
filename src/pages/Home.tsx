@@ -11,7 +11,7 @@ import dark from "../themes/darkTheme";
 export const Home = () => (
 <>
   <CssBaseline />
-  <Container maxWidth={false} className={style.container} >
+  <Container className={style.container} >
 
       <Grid container className={style.gridContainer}  sx={{}} >
 
