@@ -1,19 +1,42 @@
 import * as React from "react";
 import { Paper, Typography, Box, Container, Grid, CssBaseline } from "@mui/material";
 
-export const ReactTSWebpack = () => (
 
+// code related imports 
+import { CopyBlock, dracula } from "react-code-blocks";
+
+
+const ReactTSWebpack = () => {
+
+
+    return (
     <>
     <CssBaseline />
-    <Box>
         <Typography variant="h1">
             This is react webpack 
         </Typography>
-    </Box>
-    
+
+    <Container>
+
+        <Typography variant="body1">
+            This is a module to install what you want 
+
+        </Typography>
+        <CopyBlock 
+        language={`bash`}
+        text={"yarn add react-code-blocks"}
+        showLineNumbers={true}
+        theme={dracula}
+        wrapLines={true}
+        codeBlock
+        />
+
+
+    </Container>
     
     </>
+    );
 
-);
+};
   
 export default ReactTSWebpack;
