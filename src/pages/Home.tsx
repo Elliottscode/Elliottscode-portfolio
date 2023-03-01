@@ -16,24 +16,16 @@ export const Home = () => (
       <Grid container className={style.gridContainer}  sx={{}} >
 
           <Typography className={style.title} variant="h1" sx={{fontSize: '5rem'}}>
-              Hire me?
+              Who am i?
           </Typography>
 
         <Grid item sx={{}}>
-          <Typography  sx={{ fontSize: "10re"}}>
-              This is what i am talking about This is what i am talking about This is what i am talking about This is what i am talking about This is what i am talking aboutThis is what i am talking aboutThis is what i am talking about
+          <Typography  sx={{ fontSize: "10re", width: "50%", marginLeft: "50%", paddingTop: "10vh"}}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non. Quis hendrerit dolor magna eget est lorem ipsum dolor. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Vel pharetra vel turpis nunc. Pulvinar pellentesque habitant morbi tristique. Sagittis nisl rhoncus mattis rhoncus urna neque. Sagittis nisl rhoncus mattis rhoncus. Diam maecenas ultricies mi eget mauris pharetra et ultrices. Nulla facilisi nullam vehicula ipsum a arcu. Etiam sit amet nisl purus in mollis nunc sed id. Libero enim sed faucibus turpis. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Massa sapien faucibus et molestie ac feugiat sed. Fermentum et sollicitudin ac orci phasellus egestas tellus. Commodo elit at imperdiet dui accumsan sit amet. Non arcu risus quis varius quam.
+
           </Typography>
         </Grid>
-        <Grid item xs={6} md={6}>
-          <Typography sx={{ fontSize: "10re"}}>
-              This is what i am talking about
-          </Typography>
-        </Grid>
-        <Grid item xs={6} md={6}>
-          <Typography sx={{ fontSize: "10re"}}>
-              This is what i am talking about
-          </Typography>
-        </Grid>
+
           
       </Grid>
 
