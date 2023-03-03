@@ -25,6 +25,9 @@ export const Home = () => (
 
           </Typography>
         </Grid>
+        <Typography>
+          New added text
+        </Typography>
 
           
       </Grid>
