@@ -15,19 +15,26 @@ export const Home = () => (
 
       <Grid container className={style.gridContainer}  sx={{}} >
 
-          <Typography className={style.title} variant="h1" sx={{fontSize: '5rem'}}>
-              Who am i?
+          <Typography className={style.title} variant="h1" sx={{}}>
+              Im 
+          </Typography>
+          <Typography className={style.title} variant="h1" sx={{}}>
+            Elliott McCully
           </Typography>
 
         <Grid item sx={{}}>
-          <Typography  sx={{ fontSize: "10re", width: "50%", marginLeft: "50%", paddingTop: "10vh"}}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet porttitor eget dolor morbi non. Quis hendrerit dolor magna eget est lorem ipsum dolor. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Vel pharetra vel turpis nunc. Pulvinar pellentesque habitant morbi tristique. Sagittis nisl rhoncus mattis rhoncus urna neque. Sagittis nisl rhoncus mattis rhoncus. Diam maecenas ultricies mi eget mauris pharetra et ultrices. Nulla facilisi nullam vehicula ipsum a arcu. Etiam sit amet nisl purus in mollis nunc sed id. Libero enim sed faucibus turpis. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Massa sapien faucibus et molestie ac feugiat sed. Fermentum et sollicitudin ac orci phasellus egestas tellus. Commodo elit at imperdiet dui accumsan sit amet. Non arcu risus quis varius quam.
+          <Typography variant="body1" sx={{ width: "50%", marginLeft: "50%", paddingTop: "10vh"}}>
+          I am hard working individual who likes to work, learn new skills and grow as a person. I am a fast learner and always try my best to achieve what I set out to do. I believe communication is one of my best skills and feel I work well in teams. Being able to articulate precisely, help motivate and promote efficiency.
+          My university studies have equipped me with a broad set of skills in engineering and computer science. I enjoy practical hands-on work where I can use my problem-solving, critical thinking and spatial reasoning to create “outside the box” solutions.
+
+
+          </Typography>
+          <Typography variant="body1" sx={{ width: "50%", marginLeft: "50%", paddingTop: "1vh"}}>
+            My university studies have equipped me with a broad set of skills in engineering and computer science. I enjoy practical hands-on work where I can use my problem-solving, critical thinking and spatial reasoning to create “outside the box” solutions.
+
 
           </Typography>
         </Grid>
-        <Typography>
-          New added text
-        </Typography>
 
           
       </Grid>

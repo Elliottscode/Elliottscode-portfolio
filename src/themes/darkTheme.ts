@@ -17,6 +17,7 @@ const dark = createTheme({
         text: {
             primary: "#FFFFFF"
         }
+        
     }
 
 

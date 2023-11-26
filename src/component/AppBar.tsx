@@ -49,7 +49,7 @@ function ResponsiveAppBar() {
               marginRight: '2vw'
             }}
           >
-            Elcode
+            Elliottscode
           </Typography>
 
           <Box maxWidth="40%" sx={{ marginLeft: '30%', flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-between'}}>
