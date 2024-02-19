@@ -30,12 +30,12 @@ function ResponsiveAppBar() {
 
   return (
     <ThemeProvider theme={darkTheme}>
-    <AppBar position="relative" sx={{bgcolor: 'background.paper', boxShadow: "true"}}>
-      <Container maxWidth="xl">
+    <Box sx={{flexGrow: 1}}>
+    <AppBar  sx={{position: "static", bgcolor: 'background.paper', boxShadow: "true"}}>
+      <Container >
         <Toolbar disableGutters>
           <Typography
             variant="h6"
-            noWrap
             component="a"
             sx={{
               mr: 10,
@@ -52,7 +52,7 @@ function ResponsiveAppBar() {
             Elliottscode
           </Typography>
 
-          <Box maxWidth="40%" sx={{ marginLeft: '30%', flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'space-between'}}>
+          <Box sx={{ width:"1%", display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'space-between'}}>
 
             {pageRoutes.map((route) => (
               <Link
@@ -73,6 +73,7 @@ function ResponsiveAppBar() {
         </Toolbar>
       </Container>
     </AppBar>
+    </Box>
     </ThemeProvider>
   );
 }

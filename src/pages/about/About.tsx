@@ -1,5 +1,5 @@
 import React from "react";
-import ResponsiveAppBar from "../component/AppBar";
+import ResponsiveAppBar from "../../component/AppBar";
 import about from "./about.scss";
 
 export const About = () => (

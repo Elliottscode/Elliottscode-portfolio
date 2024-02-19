@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 // Main Pages 
 import Home from "./pages/Home";
-import About from "./pages/About";
+import About from "./pages/about/About";
 import Blog from "./pages/Blog";
 
 

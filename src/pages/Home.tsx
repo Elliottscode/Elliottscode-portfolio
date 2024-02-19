@@ -18,7 +18,7 @@ export const Home = () => (
           <Typography className={style.title} variant="h1" sx={{}}>
               Im 
           </Typography>
-          <Typography className={style.title} variant="h1" sx={{}}>
+          <Typography className={style.title} variant="h1" sx={{fontFamily: 'Roboto'}}>
             Elliott McCully
           </Typography>
 

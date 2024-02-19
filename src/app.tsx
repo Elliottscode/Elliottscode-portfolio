@@ -10,7 +10,7 @@ import ResponsiveAppBar from "./component/AppBar";
 
 
 // Pages 
-import About from "./pages/About";
+import About from "./pages/about/About";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Portfolio from "./pages/Portfolio";
