@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import Stack from '@mui/material/Stack';
 
 // imports
 import { Link} from "react-router-dom";
@@ -22,7 +23,7 @@ import style from "./AppBar.scss";
 
 //theme
 import darkTheme from "../themes/darkTheme";
-import { ThemeProvider } from '@mui/material';
+import { Grid, ThemeProvider } from '@mui/material';
 
 
 function ResponsiveAppBar() {
@@ -51,8 +52,8 @@ function ResponsiveAppBar() {
           >
             Elliottscode
           </Typography>
-
-          <Box sx={{ width:"1%", display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'space-between'}}>
+          <Grid direction="row" alignItems="vertical" gap={1}>   
+          <Box >
 
             {pageRoutes.map((route) => (
               <Link
@@ -70,6 +71,7 @@ function ResponsiveAppBar() {
             
             ))}
           </Box>
+          </Grid>
         </Toolbar>
       </Container>
     </AppBar>
