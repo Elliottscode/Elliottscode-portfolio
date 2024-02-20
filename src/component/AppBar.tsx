@@ -31,33 +31,14 @@ function ResponsiveAppBar() {
 
   return (
     <ThemeProvider theme={darkTheme}>
-    <Box sx={{flexGrow: 1}}>
-    <AppBar  sx={{position: "static", bgcolor: 'background.paper', boxShadow: "true"}}>
+    <Grid container direction="row" width="100%" alignItems="center" display="inline-block">
+    <AppBar  sx={{ bgcolor: 'background.paper', boxShadow: "true"}}>
       <Container >
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            component="a"
-            sx={{
-              mr: 10,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'text.primary',
-              textDecoration: 'none',
-              fontSize: '150%',
-              marginRight: '2vw'
-            }}
-          >
-            Elliottscode
-          </Typography>
-          <Grid direction="row" alignItems="vertical" gap={1}>   
-          <Box >
-
+          <Grid container item direction="row" spacing="1%" key={"pageMenu"}>
             {pageRoutes.map((route) => (
+              <Grid item xs="auto" display={"flex"} key={route.key} >
               <Link
-                key={route.key}
                 to={route.path}
                 style={{textDecoration: 'none'}}
               >
@@ -68,14 +49,36 @@ function ResponsiveAppBar() {
                 {route.title}
               </Button>
               </Link>
+              </Grid>
             
             ))}
+          <Grid item display="flex" textAlign="center"  key={"logoText"} >
+            <Box flexGrow={1} alignContent="center" >
+            <Box>
+            <Typography
+            variant="h6"
+            component="a"
+            sx={{
+
+              paddingTop: "10%",
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'text.primary',
+              textDecoration: 'none',
+              fontSize: '40%'
+            }}
+          >
+            Elliottscode
+          </Typography>
           </Box>
+          </Box>
+          </Grid>
           </Grid>
         </Toolbar>
       </Container>
     </AppBar>
-    </Box>
+    </Grid>
     </ThemeProvider>
   );
 }
