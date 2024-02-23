@@ -31,7 +31,7 @@ function ResponsiveAppBar() {
 
   return (
     <ThemeProvider theme={darkTheme}>
-    <Grid container direction="row" width="100%" alignItems="center" display="inline-block">
+    <Grid container direction="row" height='10%' width="100%" alignItems="center" display="inline-block">
     <AppBar  sx={{ bgcolor: 'background.paper', boxShadow: "true"}}>
       <Container >
         <Toolbar disableGutters>

@@ -11,6 +11,7 @@ import style from "./BlogCard.scss";
 
 
 interface blogData {
+    blogNum: number;
     title: string;
     bio: string;
     image: Array<string>;
@@ -30,28 +31,28 @@ return (
                 padding: "30px",
                 height: "fit-content"}}>
         <Container disableGutters={true} sx={{width: "200px", height: '100%', bgcolor: 'red'}}>
+            
 
-
             <img
-                src={require(`./icons/${props.image[0]}.png`)}
+                src={require(`./icons/${props.image[0]}.webp`)}
                 width="50%"
                 height="50%"
                 className={style.img}
             />
             <img
-                src={require(`./icons/${props.image[1]}.png`)}
+                src={require(`./icons/${props.image[1]}.webp`)}
                 width="50%"
                 height="50%"
                 className={style.img}
             />
             <img
-                src={require(`./icons/${props.image[2]}.png`)}
+                src={require(`./icons/${props.image[2]}.webp`)}
                 width="50%"
                 height="50%"
                 className={style.img}
             />
             <img
-                src={require(`./icons/${props.image[3]}.png`)}
+                src={require(`./icons/${props.image[3]}.webp`)}
                 width="50%"
                 height="50%"
                 className={style.img}
@@ -61,7 +62,7 @@ return (
         </Container>
 
         <Container>
-        <Button component={Link} to={blogroutes[0].path} className={style.link} sx={{color: 'text.primary', padding: 0}}>
+        <Button component={Link} to={blogroutes[props.blogNum].path} className={style.link} sx={{color: 'text.primary', padding: 0}}>
         <Typography variant="h4" sx={{}}>
             {props.title}
         </Typography>

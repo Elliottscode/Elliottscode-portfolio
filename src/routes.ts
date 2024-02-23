@@ -8,7 +8,7 @@ import Blog from "./pages/Blog";
 
 // Blog pages 
 import ReactTSWebpack from "./pages/blogs/ReactTSWebpack";
-import JavaScriptCode from "./pages/blogs/CodeExamples/JavaScriptCode";
+import JavaScriptCode from "./pages/blogs/JavaScriptCode";
 
 
 
@@ -79,11 +79,11 @@ export const blogroutes: Array<blog> = [
     {
         key: 'blog-2',
         title: 'JS Code Examples',
-        path: 'CodeExamples/javascript',
+        path: 'javascriptcode',
         enabled: true,
         component: JavaScriptCode,
         bio: 'This is a little bio on what this tutorial does i am going to setup a boilier plate with react typesctripty webpack and sass with loaders gort',
-        image: ['github', 'github', 'github', 'github']
+        image: ['javascript', 'javascript', 'javascript', 'javascript']
     }
 
 ]
