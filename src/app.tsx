@@ -18,6 +18,7 @@ import Portfolio from "./pages/Portfolio";
 
 // Blog Pages
 import ReactTSWebpack from "./pages/blogs/ReactTSWebpack"; 
+import JavaScriptCode from "./pages/blogs/CodeExamples/JavaScriptCode";
 
 
 export const App = () => (
@@ -32,6 +33,7 @@ export const App = () => (
         <Route path="blog" element={<Blog />} />
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="blog/reacttswebpack" element={<ReactTSWebpack />} />
+        <Route path="blog/JavaScriptCode" element={<JavaScriptCode />} />
         </Routes>
     </Router>
 
