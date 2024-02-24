@@ -40,7 +40,170 @@ export const JavaScriptCode = () => {
         <Typography variant="body1">
             Sorted array is: {numString}
         </Typography>
-       
+
+        <Typography variant="h3">
+            Sorting an Array 
+
+        </Typography>
+        <Typography variant="body1">
+        JavaScript provides an inbuilt sort&#40;&#41; method that can be used to sort the elements inside an Array object. The code snippet below provided an example to sort numbers in ascending order.
+        </Typography>
+        <CopyBlock 
+        language={`javascript`}
+        text={`const numbers = [102, -1, 2];\nnumbers.sort((a, b) => a - b);\nconsole.log(numbers);`}
+        showLineNumbers={true}
+        theme={dracula}
+        wrapLines={true}
+        codeBlock
+        />
+        <Typography variant="body1">
+            Sorted array is: {numString}
+        </Typography>
+        <Typography variant="h3">
+            Sorting an Array 
+
+        </Typography>
+        <Typography variant="body1">
+        JavaScript provides an inbuilt sort&#40;&#41; method that can be used to sort the elements inside an Array object. The code snippet below provided an example to sort numbers in ascending order.
+        </Typography>
+        <CopyBlock 
+        language={`javascript`}
+        text={`const numbers = [102, -1, 2];\nnumbers.sort((a, b) => a - b);\nconsole.log(numbers);`}
+        showLineNumbers={true}
+        theme={dracula}
+        wrapLines={true}
+        codeBlock
+        />
+        <Typography variant="body1">
+            Sorted array is: {numString}
+        </Typography>
+        <Typography variant="h3">
+            Sorting an Array 
+
+        </Typography>
+        <Typography variant="body1">
+        JavaScript provides an inbuilt sort&#40;&#41; method that can be used to sort the elements inside an Array object. The code snippet below provided an example to sort numbers in ascending order.
+        </Typography>
+        <CopyBlock 
+        language={`javascript`}
+        text={`const numbers = [102, -1, 2];\nnumbers.sort((a, b) => a - b);\nconsole.log(numbers);`}
+        showLineNumbers={true}
+        theme={dracula}
+        wrapLines={true}
+        codeBlock
+        />
+        <Typography variant="body1">
+            Sorted array is: {numString}
+        </Typography>
+        <Typography variant="h3">
+            Sorting an Array 
+
+        </Typography>
+        <Typography variant="body1">
+        JavaScript provides an inbuilt sort&#40;&#41; method that can be used to sort the elements inside an Array object. The code snippet below provided an example to sort numbers in ascending order.
+        </Typography>
+        <CopyBlock 
+        language={`javascript`}
+        text={`const numbers = [102, -1, 2];\nnumbers.sort((a, b) => a - b);\nconsole.log(numbers);`}
+        showLineNumbers={true}
+        theme={dracula}
+        wrapLines={true}
+        codeBlock
+        />
+        <Typography variant="body1">
+            Sorted array is: {numString}
+        </Typography>
+        <Typography variant="h3">
+            Sorting an Array 
+
+        </Typography>
+        <Typography variant="body1">
+        JavaScript provides an inbuilt sort&#40;&#41; method that can be used to sort the elements inside an Array object. The code snippet below provided an example to sort numbers in ascending order.
+        </Typography>
+        <CopyBlock 
+        language={`javascript`}
+        text={`const numbers = [102, -1, 2];\nnumbers.sort((a, b) => a - b);\nconsole.log(numbers);`}
+        showLineNumbers={true}
+        theme={dracula}
+        wrapLines={true}
+        codeBlock
+        />
+        <Typography variant="body1">
+            Sorted array is: {numString}
+        </Typography>
+        <Typography variant="h3">
+            Sorting an Array 
+
+        </Typography>
+        <Typography variant="body1">
+        JavaScript provides an inbuilt sort&#40;&#41; method that can be used to sort the elements inside an Array object. The code snippet below provided an example to sort numbers in ascending order.
+        </Typography>
+        <CopyBlock 
+        language={`javascript`}
+        text={`const numbers = [102, -1, 2];\nnumbers.sort((a, b) => a - b);\nconsole.log(numbers);`}
+        showLineNumbers={true}
+        theme={dracula}
+        wrapLines={true}
+        codeBlock
+        />
+        <Typography variant="body1">
+            Sorted array is: {numString}
+        </Typography>
+        <Typography variant="h3">
+            Sorting an Array 
+
+        </Typography>
+        <Typography variant="body1">
+        JavaScript provides an inbuilt sort&#40;&#41; method that can be used to sort the elements inside an Array object. The code snippet below provided an example to sort numbers in ascending order.
+        </Typography>
+        <CopyBlock 
+        language={`javascript`}
+        text={`const numbers = [102, -1, 2];\nnumbers.sort((a, b) => a - b);\nconsole.log(numbers);`}
+        showLineNumbers={true}
+        theme={dracula}
+        wrapLines={true}
+        codeBlock
+        />
+        <Typography variant="body1">
+            Sorted array is: {numString}
+        </Typography>
+        <Typography variant="h3">
+            Sorting an Array 
+
+        </Typography>
+        <Typography variant="body1">
+        JavaScript provides an inbuilt sort&#40;&#41; method that can be used to sort the elements inside an Array object. The code snippet below provided an example to sort numbers in ascending order.
+        </Typography>
+        <CopyBlock 
+        language={`javascript`}
+        text={`const numbers = [102, -1, 2];\nnumbers.sort((a, b) => a - b);\nconsole.log(numbers);`}
+        showLineNumbers={true}
+        theme={dracula}
+        wrapLines={true}
+        codeBlock
+        />
+        <Typography variant="body1">
+            Sorted array is: {numString}
+        </Typography>
+        <Typography variant="h3">
+            Sorting an Array 
+
+        </Typography>
+        <Typography variant="body1">
+        JavaScript provides an inbuilt sort&#40;&#41; method that can be used to sort the elements inside an Array object. The code snippet below provided an example to sort numbers in ascending order.
+        </Typography>
+        <CopyBlock 
+        language={`javascript`}
+        text={`const numbers = [102, -1, 2];\nnumbers.sort((a, b) => a - b);\nconsole.log(numbers);`}
+        showLineNumbers={true}
+        theme={dracula}
+        wrapLines={true}
+        codeBlock
+        />
+        <Typography variant="body1">
+            Sorted array is: {numString}
+        </Typography>
+
 
 
 
