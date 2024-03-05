@@ -1,12 +1,14 @@
 {
     "compilerOptions": {
       "outDir": "/dist",
-      "lib": ["es6", "dom"],
+      "lib": ["ES2015", "dom"],
       "noImplicitAny": true,
       "noImplicitThis": true,
+      "sourceMap": true,
       "strictNullChecks": true,
-      "module": "es6",
+      "module": "ESNext",
       "target": "es5",
+      "removeComments": true,
       "jsx": "react",
       "allowJs": true,
       "allowSyntheticDefaultImports": true,

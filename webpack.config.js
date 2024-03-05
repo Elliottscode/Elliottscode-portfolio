@@ -2,7 +2,10 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const TerserPlugin = require('terser-webpack-plugin')
+// webpack.config.js
+var CleanObsoleteChunks = require('webpack-clean-obsolete-chunks')
+// Bundle analzyer with an interactive zoomable tree map
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
   mode: 'development',
@@ -11,7 +14,7 @@ module.exports = {
   },
 
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, '/dist'),
     publicPath: '/',
     filename: 'index.bundle.js',
     clean: true
@@ -23,12 +26,9 @@ module.exports = {
   devServer: {
     port: 3010,
     static: '/dist',
-    historyApiFallback: true
+    historyApiFallback: true,
+    compress: true
 
-  },
-  optimization: {
-    minimize: true,
-    minimizer: [new TerserPlugin()]
   },
   module: {
     rules: [
@@ -42,10 +42,12 @@ module.exports = {
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
+        include: path.resolve(__dirname, 'src'),
         loader: 'ts-loader'
       },
       {
         test: /\.(scss|css)$/,
+        include: path.resolve(__dirname, 'src'),
         use: [
           { loader: 'style-loader' }, // Step 4: style loader injects the result intho the DOM as a style block
           { loader: 'css-modules-typescript-loader' }, // Step 3: generates a .d.ts module next to the .scss file
@@ -59,6 +61,9 @@ module.exports = {
       }
     ]
   },
-  plugins: [new MiniCssExtractPlugin(), new webpack.HotModuleReplacementPlugin(), new HtmlWebpackPlugin({ favicon: './public/favicon.ico', template: './public/index.html' })
+  plugins: [new MiniCssExtractPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({ favicon: './public/favicon.ico', template: './public/index.html' }),
+    new CleanObsoleteChunks()
   ]
 }
